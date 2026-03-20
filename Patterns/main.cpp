@@ -14,6 +14,7 @@ void p1(int n)
     }
 }
 
+//Right angled triangle pattern
 void p2(int n)
 {
     for(int i = 0; i < n; i++) 
