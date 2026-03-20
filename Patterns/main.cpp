@@ -40,6 +40,19 @@ void p3(int n)
     }
 }
 
+//Second Right angled triangle pattern using numbers
+void p4(int n)
+{
+    for(int i = 1; i <= n; i++) 
+    {
+        for(int j = 1; j <= i; j++)
+        {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     int n;
@@ -47,5 +60,6 @@ int main()
     p1(n);
     p2(n);
     p3(n);
+    p4(n);
     return 0;
 }
