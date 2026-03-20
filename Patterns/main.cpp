@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Square Pattern
 void p1(int n)
 {
     for(int i = 0; i < n; i ++)
