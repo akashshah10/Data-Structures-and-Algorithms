@@ -9,6 +9,9 @@ void expPair()
 
     pair<int, pair<int, string>> p2 = {1,{2,"Akash"}};
     cout << p2.first << "  " << p2.second.first <<" "<< p2.second.second << endl;
+
+    pair<int, int> arr[] = { {1, 2}, {4, 5}, {6, 7} };
+    cout << arr[2].second;
 }
 int main()
 {
