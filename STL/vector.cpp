@@ -4,8 +4,10 @@ using namespace std;
 
 int main()
 {
-    vector<int> v;
+    vector<int> v = {4,5};
+    cout << v.size() << endl;
     v.push_back(1);
-    cout << v;
+    cout << v.size();
+   
     return 0;
 }
