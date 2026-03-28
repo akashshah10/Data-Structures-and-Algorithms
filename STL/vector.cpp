@@ -14,6 +14,10 @@ int main()
     }
     cout << endl;
 
+    for(auto it = v.begin(); it != v.end(); it ++)  //auto = compiler decides the type
+    {
+        cout << *it << endl;
+    }
    
     return 0;
 }
