@@ -19,5 +19,14 @@ int main()
         cout << *it << endl;
     }
    
+
+    vector<int> v1 = {10, 20 ,30};
+    vector<int> v2 = {50, 60 ,70};
+    v1.swap(v2);  //Swap method
+    for(auto it = v1.begin(); it != v1.end(); it ++)
+    {
+        cout << *(it) << " ";
+    }
+
     return 0;
 }
