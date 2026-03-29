@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-int main()
+void expVec()
 {
     vector<int> v = {4,5,6,7};
     // cout << v.size() << endl;
@@ -28,5 +28,10 @@ int main()
         cout << *(it) << " ";
     }
 
+}
+
+int main()
+{
+    expVec();
     return 0;
 }
