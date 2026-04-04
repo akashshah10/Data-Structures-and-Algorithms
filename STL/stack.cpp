@@ -10,7 +10,13 @@ int main()
     s.push(1);
     s.push(5);
     s.push(4);
-
+     
+    cout << s.size() << endl;
+    s.pop();
+    
+    cout << s.top() << endl;
+    
+    cout << s.empty();
     
     return 0;
 }
