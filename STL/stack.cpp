@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    // All operations take O(1) time complexity
     stack<int> s;
     s.push(2);
     s.push(6);
