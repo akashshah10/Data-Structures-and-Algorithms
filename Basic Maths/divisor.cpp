@@ -1,13 +1,18 @@
 #include <iostream>
 using namespace std;
 
-void printDivisor(int a)
+void printDivisor(int n)
 {
-    for(int i = 1; i <= a; i++)
+    for(int i = 1; i * i <= n; i++)
     {
-        if(a % i == 0)
+        if(n % i == 0)
         {
-            cout << i <<" ";
+            cout << i << " ";
+            
+            if(i != n / i)  // Avoid duplicate for perfect squares
+            {
+                cout << n / i << " ";
+            }
         }
     }
 }
@@ -18,5 +23,4 @@ int main()
     cin >> n;
     printDivisor(n);
     return 0;
-
 }
