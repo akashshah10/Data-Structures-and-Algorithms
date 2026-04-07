@@ -5,6 +5,7 @@ using namespace std;
 int calculateGCD(int n1, int n2)
 {
     int GCD = 1;
+    // Brute Force
     for(int i = 1; i <= min(n1,n2); i++)
         {
             if(n1 % i == 0 && n2 % i == 0)
@@ -12,6 +13,16 @@ int calculateGCD(int n1, int n2)
                 GCD = i;
             }
         }
+
+    //Optimised 
+//     for(int i = min(n1,n2); i >= 1; i++)
+//     {
+//         if(n1 % i == 0 && n2 % i == 0)
+//         {
+//             GCD = i;
+//             break;
+//         }
+//     }
         return GCD;
 }
 
