@@ -3,11 +3,9 @@ using namespace std;
 
 int printSum(int n)
 {
-    int sum = 0;
     if(n < 1)return 0;
-    sum += (printSum(n - 1) + n);
 
-    return sum;
+    return printSum(n - 1) + n;
 }
 
 int main()
