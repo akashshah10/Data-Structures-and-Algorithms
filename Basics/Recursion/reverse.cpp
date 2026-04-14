@@ -2,15 +2,30 @@
 #include <vector>
 using namespace std;
 
-vector<int> reverseArray(vector<int> vec)
+vector<int> reverseArray(vector<int>& vec)
+// {
+//     vector<int> reverse;
+//     for(int i = vec.size() - 1; i >= 0; i--)
+//     {
+//         reverse.emplace_back(vec[i]);
+//     }
+//     return reverse;
+// }
+
+// Two Pointer Approach
 {
-    vector<int> reverse;
-    for(int i = vec.size() - 1; i >= 0; i--)
-    {
-        reverse.emplace_back(vec[i]);
+        int st = 0;
+        int end = vec.size() - 1;
+        while(st < end)
+        {
+            int temp = vec[st];
+            vec[st] = vec[end];
+            vec[end] = temp;
+            st ++;
+            end --;
+        }
+        return vec;
     }
-    return reverse;
-}
 
 int main()
 {
