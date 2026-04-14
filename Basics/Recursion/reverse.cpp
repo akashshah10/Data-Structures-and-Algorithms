@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 using namespace std;
 
@@ -25,6 +26,11 @@ vector<int> reverseArray(vector<int>& vec)
             end --;
         }
         return vec;
+
+
+        // Built in Library Function - reverse
+        // reverse(vec.begin(), vec.end());
+        // return vec;
     }
 
 int main()
