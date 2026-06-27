@@ -9,7 +9,7 @@ int main()
 
     int hash[26] = {0};  // This imlementation is only applicable if all the characters of the string are in lowercase. If all the characters(256) are in the string just declare the array of size 256 and remove the subtraction operation
 
-    for(int i = 0; i < s.length(); i ++)
+    for(int i = 0; i < s.size(); i ++)
     {
         hash[s[i] - 'a']++;
     }
