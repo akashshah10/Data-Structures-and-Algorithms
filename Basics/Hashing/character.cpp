@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// This solution is only valid if given there are only lowercase letters 
 int main()
 {
     string s;
