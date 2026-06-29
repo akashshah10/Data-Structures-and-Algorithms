@@ -25,10 +25,10 @@ int main()
 
 
     // Iterator. map stores data in sorted order
-    for(auto it: freq)
-    {
-        cout << it.first << "-->" << it.second << endl;
-    }
+    // for(auto it: freq)
+    // {
+    //     cout << it.first << "-->" << it.second << endl;
+    // }
 
 
     // Query
